@@ -1,0 +1,10 @@
+[book]
+title = "Snowcopy beginners' guide"
+authors = ["Jon"]
+language = "en"
+
+[output.html]
+default-theme = "coal"
+preferred-dark-theme = "coal"
+additional-css = ["theme/platform.css", "theme/snowcopy-animation.css"]
+additional-js = ["theme/platform.js"]

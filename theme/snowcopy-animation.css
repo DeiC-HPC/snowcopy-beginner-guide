@@ -1,0 +1,545 @@
+:root {
+    --snowcopy-primary: #3b82f6;
+    --snowcopy-local-bg: #f8fafc;
+    --snowcopy-local-border: #cbd5e1;
+    --snowcopy-local-header: #2563eb;
+    --snowcopy-remote-bg: #f0fdf4;
+    --snowcopy-remote-border: #bbf7d0;
+    --snowcopy-remote-header: #16a34a;
+    --snowcopy-item-bg: #ffffff;
+    --snowcopy-item-border: #e2e8f0;
+    --snowcopy-text: #1e293b;
+    --snowcopy-text-muted: #64748b;
+    --snowcopy-code-bg: #1e293b;
+    --snowcopy-code-text: #f8fafc;
+    --snowcopy-divider: #cbd5e1;
+}
+
+.snowcopy-demo {
+    max-width: 960px;
+    margin: 2rem auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--snowcopy-text);
+}
+
+/* Command Header */
+.snowcopy-demo .command-box {
+    background: #0f172a;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+}
+
+.snowcopy-demo .command-label {
+    background: #334155;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.snowcopy-demo .command-text {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    white-space: nowrap;
+}
+
+.snowcopy-demo .cmd-bin { color: #60a5fa; font-weight: 600; }
+.snowcopy-demo .cmd-sub { color: #f59e0b; }
+.snowcopy-demo .cmd-src { color: #93c5fd; }
+.snowcopy-demo .cmd-dst { color: #86efac; }
+
+/* Stage Layout */
+.snowcopy-demo .snowcopy-stage {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    padding: 1.5rem;
+    position: relative;
+}
+
+/* Stage Headers: Local vs Network Boundary vs S3 */
+.snowcopy-demo .stage-headers {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 140px minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--snowcopy-divider);
+}
+
+.snowcopy-demo .zone-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snowcopy-demo .boundary-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snowcopy-demo .zone-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 10px;
+    border-radius: 9999px;
+    margin-bottom: 6px;
+}
+
+.snowcopy-demo .local-header .zone-badge {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.snowcopy-demo .remote-header .zone-badge {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.snowcopy-demo .zone-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2px;
+}
+
+.snowcopy-demo .zone-title code {
+    font-size: 0.9em;
+    background: rgba(0,0,0,0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.snowcopy-demo .zone-desc {
+    font-size: 0.8rem;
+    color: var(--snowcopy-text-muted);
+}
+
+.snowcopy-demo .network-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 3px 8px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+/* Stage Body & Rows */
+.snowcopy-demo .stage-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.snowcopy-demo .mapping-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 140px minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+}
+
+/* File Items */
+.snowcopy-demo .file-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    height: 48px;
+    box-sizing: border-box;
+}
+
+.snowcopy-demo .local-item {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #3b82f6;
+}
+
+.snowcopy-demo .s3-item {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-left: 4px solid #10b981;
+}
+
+.snowcopy-demo .file-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.snowcopy-demo .file-path {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.88rem;
+    color: #334155;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.snowcopy-demo .s3-prefix {
+    color: #059669;
+    font-weight: 600;
+}
+
+/* Transfer Track & Flowing Arrow */
+.snowcopy-demo .transfer-cell {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    width: 100%;
+}
+
+.snowcopy-demo .transfer-track {
+    width: 100%;
+    height: 2px;
+    background: #cbd5e1;
+    position: relative;
+}
+
+.snowcopy-demo .transfer-track::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #94a3b8;
+}
+
+.snowcopy-demo .flow-arrow {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    border: 1px solid #3b82f6;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: flow-left-to-right 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.snowcopy-demo .flying-file {
+    font-size: 0.85rem;
+}
+
+.snowcopy-demo .delay1 {
+    animation-delay: 1.0s;
+}
+
+.snowcopy-demo .delay2 {
+    animation-delay: 2.0s;
+}
+
+@keyframes flow-left-to-right {
+    0% {
+        left: 0;
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    15% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    85% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        left: calc(100% - 28px);
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+/* Explanation footer */
+.snowcopy-demo .demo-explanation {
+    margin-top: 1rem;
+}
+
+.snowcopy-demo .explanation-note {
+    background: #f8fafc;
+    border-left: 4px solid #6366f1;
+    padding: 10px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.5rem;
+    color: #475569;
+}
+
+.snowcopy-demo .explanation-note code {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Dark theme / mdBook dark modes */
+@media (prefers-color-scheme: dark) {
+    .snowcopy-demo .snowcopy-stage {
+        background: #1e293b;
+        border-color: #334155;
+    }
+
+    .snowcopy-demo .stage-headers {
+        border-bottom-color: #334155;
+    }
+
+    .snowcopy-demo .zone-title {
+        color: #f8fafc;
+    }
+
+    .snowcopy-demo .zone-title code {
+        background: rgba(255,255,255,0.1);
+        color: #e2e8f0;
+    }
+
+    .snowcopy-demo .local-item {
+        background: #0f172a;
+        border-color: #334155;
+    }
+
+    .snowcopy-demo .s3-item {
+        background: #064e3b;
+        border-color: #047857;
+    }
+
+    .snowcopy-demo .file-path {
+        color: #e2e8f0;
+    }
+
+    .snowcopy-demo .network-badge {
+        background: #1e293b;
+        border-color: #475569;
+        color: #cbd5e1;
+    }
+
+    .snowcopy-demo .transfer-track {
+        background: #475569;
+    }
+
+    .snowcopy-demo .transfer-track::after {
+        border-left-color: #64748b;
+    }
+
+    .snowcopy-demo .flow-arrow {
+        background: #334155;
+        border-color: #60a5fa;
+    }
+
+    .snowcopy-demo .explanation-note {
+        background: #1e293b;
+        color: #cbd5e1;
+        border-color: #818cf8;
+    }
+
+    .snowcopy-demo .explanation-note code {
+        background: #334155;
+        color: #e2e8f0;
+    }
+}
+
+/* Also support mdBook theme classes on html/body */
+.coal .snowcopy-demo .snowcopy-stage,
+.navy .snowcopy-demo .snowcopy-stage,
+.ayu .snowcopy-demo .snowcopy-stage {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.coal .snowcopy-demo .stage-headers,
+.navy .snowcopy-demo .stage-headers,
+.ayu .snowcopy-demo .stage-headers {
+    border-bottom-color: #334155;
+}
+
+.coal .snowcopy-demo .zone-title,
+.navy .snowcopy-demo .zone-title,
+.ayu .snowcopy-demo .zone-title {
+    color: #f8fafc;
+}
+
+.coal .snowcopy-demo .zone-title code,
+.navy .snowcopy-demo .zone-title code,
+.ayu .snowcopy-demo .zone-title code {
+    background: rgba(255,255,255,0.1);
+    color: #e2e8f0;
+}
+
+.coal .snowcopy-demo .local-item,
+.navy .snowcopy-demo .local-item,
+.ayu .snowcopy-demo .local-item {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.coal .snowcopy-demo .s3-item,
+.navy .snowcopy-demo .s3-item,
+.ayu .snowcopy-demo .s3-item {
+    background: #064e3b;
+    border-color: #047857;
+}
+
+.coal .snowcopy-demo .file-path,
+.navy .snowcopy-demo .file-path,
+.ayu .snowcopy-demo .file-path {
+    color: #e2e8f0;
+}
+
+.coal .snowcopy-demo .network-badge,
+.navy .snowcopy-demo .network-badge,
+.ayu .snowcopy-demo .network-badge {
+    background: #1e293b;
+    border-color: #475569;
+    color: #cbd5e1;
+}
+
+.coal .snowcopy-demo .transfer-track,
+.navy .snowcopy-demo .transfer-track,
+.ayu .snowcopy-demo .transfer-track {
+    background: #475569;
+}
+
+.coal .snowcopy-demo .transfer-track::after,
+.navy .snowcopy-demo .transfer-track::after,
+.ayu .snowcopy-demo .transfer-track::after {
+    border-left-color: #64748b;
+}
+
+.coal .snowcopy-demo .flow-arrow,
+.navy .snowcopy-demo .flow-arrow,
+.ayu .snowcopy-demo .flow-arrow {
+    background: #334155;
+    border-color: #60a5fa;
+}
+
+.coal .snowcopy-demo .explanation-note,
+.navy .snowcopy-demo .explanation-note,
+.ayu .snowcopy-demo .explanation-note {
+    background: #1e293b;
+    color: #cbd5e1;
+    border-color: #818cf8;
+}
+
+.coal .snowcopy-demo .explanation-note code,
+.navy .snowcopy-demo .explanation-note code,
+.ayu .snowcopy-demo .explanation-note code {
+    background: #334155;
+    color: #e2e8f0;
+}
+
+/* Responsive design for small screens & phones */
+@media (max-width: 768px) {
+    .snowcopy-demo .stage-headers {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .snowcopy-demo .boundary-header {
+        order: 2;
+    }
+
+    .snowcopy-demo .remote-header {
+        order: 3;
+    }
+
+    .snowcopy-demo .mapping-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 10px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+
+    .snowcopy-demo .transfer-cell {
+        height: 28px;
+        justify-content: center;
+    }
+
+    .snowcopy-demo .transfer-track {
+        height: 100%;
+        width: 2px;
+        margin: 0 auto;
+    }
+
+    .snowcopy-demo .transfer-track::after {
+        top: auto;
+        bottom: 0;
+        right: -4px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #94a3b8;
+    }
+
+    .snowcopy-demo .flow-arrow {
+        top: 0;
+        left: -13px;
+        animation: flow-top-to-bottom 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .snowcopy-demo .delay1 {
+        animation-delay: 1.0s;
+    }
+
+    .snowcopy-demo .delay2 {
+        animation-delay: 2.0s;
+    }
+
+    @keyframes flow-top-to-bottom {
+        0% {
+            top: 0;
+            opacity: 0;
+            transform: scale(0.7);
+        }
+        15% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        85% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            top: calc(100% - 28px);
+            opacity: 0;
+            transform: scale(0.7);
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .snowcopy-demo .mapping-row {
+            background: #0f172a;
+            border-color: #334155;
+        }
+    }
+
+    .coal .snowcopy-demo .mapping-row,
+    .navy .snowcopy-demo .mapping-row,
+    .ayu .snowcopy-demo .mapping-row {
+        background: #0f172a;
+        border-color: #334155;
+    }
+}

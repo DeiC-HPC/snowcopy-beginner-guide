@@ -1,0 +1,16 @@
+#platform-selector {
+    height: 34px;
+    padding: 0 10px;
+
+    background-color: var(--bg);
+    color: var(--fg);
+
+    border: 1px solid var(--theme-hover);
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+[hidden] {
+    display: none !important;
+}

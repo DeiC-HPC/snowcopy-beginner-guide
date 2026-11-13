@@ -1,0 +1,81 @@
+<div class="snowcopy-demo">
+<div class="command-box">
+<div class="command-label">COMMAND</div>
+<code class="command-text" data-platform="windows"><span class="cmd-bin">snowcopy.exe</span> <span class="cmd-sub">cp</span> <span class="cmd-src">C:\data</span> <span class="cmd-dst">s3://my-bucket</span></code>
+<code class="command-text" data-platform="linux"><span class="cmd-bin">snowcopy</span> <span class="cmd-sub">cp</span> <span class="cmd-src">/data</span> <span class="cmd-dst">s3://my-bucket</span></code>
+</div>
+<div class="snowcopy-stage">
+<div class="stage-headers">
+<div class="zone-header local-header">
+<div class="zone-badge">Local Filesystem</div>
+<div class="zone-title" data-platform="windows">💻 Local Disk (<code>C:\data</code>)</div>
+<div class="zone-title" data-platform="linux">💻 Local Directory (<code>/data</code>)</div>
+<div class="zone-desc">Hierarchical folders & files</div>
+</div>
+<div class="boundary-header">
+<span class="network-badge">🌐 Network / HTTPS</span>
+</div>
+<div class="zone-header remote-header">
+<div class="zone-badge">S3 Object Storage</div>
+<div class="zone-title">☁️ Bucket (<code>s3://my-bucket</code>)</div>
+<div class="zone-desc">Flat key-value object namespace</div>
+</div>
+</div>
+<div class="stage-body">
+<div class="mapping-row">
+<div class="file-item local-item" id="src-file-1">
+<span class="file-icon">📄</span>
+<span class="file-path" data-platform="windows">C:\data\report.csv</span>
+<span class="file-path" data-platform="linux">/data/report.csv</span>
+</div>
+<div class="transfer-cell">
+<div class="transfer-track">
+<div class="flow-arrow flow-arrow-right">
+<span class="flying-file">📄</span>
+</div>
+</div>
+</div>
+<div class="file-item s3-item" id="dst-file-1">
+<span class="file-icon">📦</span>
+<span class="file-path"><span class="s3-prefix">my-bucket/</span>report.csv</span>
+</div>
+</div>
+<div class="mapping-row">
+<div class="file-item local-item" id="src-file-2">
+<span class="file-icon">📄</span>
+<span class="file-path" data-platform="windows">C:\data\logs\app.log</span>
+<span class="file-path" data-platform="linux">/data/logs/app.log</span>
+</div>
+<div class="transfer-cell">
+<div class="transfer-track">
+<div class="flow-arrow flow-arrow-right delay1">
+<span class="flying-file">📄</span>
+</div>
+</div>
+</div>
+<div class="file-item s3-item" id="dst-file-2">
+<span class="file-icon">📦</span>
+<span class="file-path"><span class="s3-prefix">my-bucket/</span>logs/app.log</span>
+</div>
+</div>
+<div class="mapping-row">
+<div class="file-item local-item" id="src-file-3">
+<span class="file-icon">📄</span>
+<span class="file-path" data-platform="windows">C:\data\images\cat.jpg</span>
+<span class="file-path" data-platform="linux">/data/images/cat.jpg</span>
+</div>
+<div class="transfer-cell">
+<div class="transfer-track">
+<div class="flow-arrow flow-arrow-right delay2">
+<span class="flying-file">📄</span>
+</div>
+</div>
+</div>
+<div class="file-item s3-item" id="dst-file-3">
+<span class="file-icon">📦</span>
+<span class="file-path"><span class="s3-prefix">my-bucket/</span>images/cat.jpg</span>
+</div>
+</div>
+</div>
+</div>
+</div>
