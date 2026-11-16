@@ -1,4 +1,4 @@
-Now, lets get started with the command line. Its a way of giving commands 
+Now, lets get started with the command line. It's a way of giving commands 
 
 <div data-platform="windows">
 Navigate to a folder where you have some files you are interested in transferring. Right click and click "Open in terminial":
@@ -18,8 +18,10 @@ Now you are in the commandline - specifically PowerShell. Great!
 
 <div data-platform="linux">
 
-![](../image/placeholder.png)
+![](../image/win-open-terminal.png)
+
+It might not look exactly the same, as there are different styles depending on which flavor of linux is installed on your machine.
 
 </div>
 
-The guide will use "C:\data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage. 
+The guide will use "C:\data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage.
