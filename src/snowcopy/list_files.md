@@ -20,7 +20,6 @@ Lets first list the buckets to see our newly uploaded one.
 
 ![](../image/placeholder.png)
 
-
 </div>
 
 To list its contents, we can do as such:
