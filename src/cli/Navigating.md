@@ -49,7 +49,7 @@ Using relative paths also work with "dir". From "C:\" lets display the contents 
 
 This drives home one of the main points for running commands. The "<Strong>working directory</Strong>" of a program is important. Changing where it executes changes the outcome of the command.
 
-Open powershell and play around with "cd" and "dir" on your own machine.
+Open PowerShell and play around with "cd" and "dir" on your own machine.
 
 <div class="explanation-note">
 <Strong>TIP: </Strong>the tab button can be used to autocomplete in the terminal. If one types the beginning of a folder like "som" and presses tab, then it will attempt to autocomplete to "some folder". One can press tab again to iterate over the options, if there are multiple.
