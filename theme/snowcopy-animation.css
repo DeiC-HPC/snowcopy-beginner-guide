@@ -23,7 +23,7 @@
 }
 
 /* Command Header */
-.snowcopy-demo .command-box {
+.command-box {
     background: #0f172a;
     border-radius: 8px;
     padding: 12px 18px;
@@ -33,9 +33,10 @@
     align-items: center;
     gap: 12px;
     overflow-x: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.snowcopy-demo .command-label {
+.command-box .command-label {
     background: #334155;
     color: #94a3b8;
     font-size: 0.95rem;
@@ -45,17 +46,17 @@
     border-radius: 4px;
 }
 
-.snowcopy-demo .command-text {
+.command-box .command-text {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     font-size: 1.2rem;
     color: #e2e8f0;
     white-space: nowrap;
 }
 
-.snowcopy-demo .cmd-bin { color: #60a5fa; font-weight: 600; }
-.snowcopy-demo .cmd-sub { color: #f59e0b; }
-.snowcopy-demo .cmd-src { color: #93c5fd; }
-.snowcopy-demo .cmd-dst { color: #86efac; }
+.command-box .cmd-bin { color: #60a5fa; font-weight: 600; }
+.command-box .cmd-sub { color: #f59e0b; }
+.command-box .cmd-src { color: #93c5fd; }
+.command-box .cmd-dst { color: #86efac; }
 
 /* Stage Layout */
 .snowcopy-demo .snowcopy-stage {
@@ -279,16 +280,17 @@
     margin-top: 1rem;
 }
 
-.snowcopy-demo .explanation-note {
+.explanation-note {
     background: #f8fafc;
     border-left: 4px solid #6366f1;
     padding: 10px 16px;
     border-radius: 0 8px 8px 0;
     font-size: 1.5rem;
     color: #475569;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.snowcopy-demo .explanation-note code {
+.explanation-note code {
     background: #e2e8f0;
     color: #0f172a;
     padding: 2px 5px;
@@ -349,13 +351,13 @@
         border-color: #60a5fa;
     }
 
-    .snowcopy-demo .explanation-note {
+    .explanation-note {
         background: #1e293b;
         color: #cbd5e1;
         border-color: #818cf8;
     }
 
-    .snowcopy-demo .explanation-note code {
+    .explanation-note code {
         background: #334155;
         color: #e2e8f0;
     }
@@ -435,17 +437,17 @@
     border-color: #60a5fa;
 }
 
-.coal .snowcopy-demo .explanation-note,
-.navy .snowcopy-demo .explanation-note,
-.ayu .snowcopy-demo .explanation-note {
+.coal .explanation-note,
+.navy .explanation-note,
+.ayu .explanation-note {
     background: #1e293b;
     color: #cbd5e1;
     border-color: #818cf8;
 }
 
-.coal .snowcopy-demo .explanation-note code,
-.navy .snowcopy-demo .explanation-note code,
-.ayu .snowcopy-demo .explanation-note code {
+.coal .explanation-note code,
+.navy .explanation-note code,
+.ayu .explanation-note code {
     background: #334155;
     color: #e2e8f0;
 }
