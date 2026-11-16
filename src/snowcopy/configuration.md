@@ -1,6 +1,6 @@
 # Configuration
 
-To use snowplow, one has to configure it first. Run:
+To use snowcopy, one has to configure it first. Run:
 
 <div data-platform="windows">
 

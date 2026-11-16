@@ -9,6 +9,11 @@ First, we need to download it. The newest version can found on the release pages
 Under assets, select the one with windows in its name.
 
 Download it and unpack the zip folder. In there you can find "snowcopy.exe".
+
+<div class="explanation-note">
+    <Strong>INFO: </Strong> snowcopy is slow to start on many Windows machines as its new software and thus is scanned on startup. We are working on a solution.
+If one is comfortable, this can be solved by placing snowcopy in folder where windows defender is excluded. Consult your local IT department first if this is unknown territory to you. 
+</div>
 </div>
 <div data-platform="linux">
 Under assets, select the one for linux.
