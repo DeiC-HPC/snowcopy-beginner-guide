@@ -52,7 +52,7 @@ This drives home one of the main points for running commands. The "<Strong>worki
 Open powershell and play around with "cd" and "dir" on your own machine.
 
 <div class="explanation-note">
-<Strong>TIP: </Strong>the tab button can be used to autocomplete in the terminal. If one types the beginning of a folder like "som" and presses tab, then it will attempt to autocomplete. One can press tab again to iterate over the options.
+<Strong>TIP: </Strong>the tab button can be used to autocomplete in the terminal. If one types the beginning of a folder like "som" and presses tab, then it will attempt to autocomplete to "some folder". One can press tab again to iterate over the options, if there are multiple.
 </div>
 
 What we have used to far are called "relative paths" because the result depends on the start location of the command. It also possible to use absolute commands by specifying it from the root of the drive:
