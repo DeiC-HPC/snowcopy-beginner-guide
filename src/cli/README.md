@@ -21,3 +21,5 @@ Now you are in the commandline - specifically PowerShell. Great!
 ![](../image/placeholder.png)
 
 </div>
+
+The guide will use "C:\data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage. 

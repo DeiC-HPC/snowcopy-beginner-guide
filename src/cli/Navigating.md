@@ -19,7 +19,7 @@ Instead of:
     <div class="command-label">COMMAND</div> <span class="cmd-bin">cd "some folder"</span>
 </div>
 
-which is why many people prefer to use names without space when working in the command prompt. Parameters to programs are separated by space, so without quotes the cd would interpret the command as cd "some" "folder", instead of a single.
+which is why many people prefer to use names without space when working in the command prompt. Parameters to programs are separated by space, so without quotes the cd would interpret the command as cd "some" "folder", instead of a single parameter.
 
 Let's investigate the current folder:
 

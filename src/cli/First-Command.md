@@ -15,3 +15,6 @@ When one is in the commandline (also called terminal) its always in the context 
 </div>
 
 
+<div class="explanation-note">
+    <strong>TIP:</strong> Instead of typing commands from scratch everytime, one can use arrow key ↑ or ↓ to go through the command history. This can save a lot of typing. When more commands have been written pressing ↑ multiple times, will iterate over them.
+</div>
