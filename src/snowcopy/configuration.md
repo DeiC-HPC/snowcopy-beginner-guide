@@ -27,7 +27,7 @@ To navigate, use the arrow keys or simply click with your mouse on the field you
 
 ![](../image/config-full.png)
 
-* <Strong>Profile name:</Strong> choose something short and sweet, since this is what you will reference this specific s3 server with when transferring files. The name will be part of the command on the following pages. The examples use <Strong>lumi</Strong>.
+* <Strong>Profile name:</Strong> choose something short and sweet, since this is what you will reference this specific s3 server with when transferring files. The name will be part of the commands on the following pages. The examples use "<Strong>lumi</Strong>".
 * <Strong>S3 Access key:</Strong> provided by the S3 service. This is part of your login and should thus be treated with the same secrecy as a password. 
 * <Strong>S3 Secret key:</Strong> provided by the S3 service. This is part of your login and should thus be treated with the same secrecy as a password.
 * <Strong>S3 url:</Strong> provided by the S3 service. 
