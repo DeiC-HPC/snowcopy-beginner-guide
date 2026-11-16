@@ -60,7 +60,7 @@ What we have used to far are called "relative paths" because the result depends 
     <div class="command-label">COMMAND</div> <span class="cmd-bin">dir "C:\data\"</span>
 </div>
 
-This can be executed from any folder, but will always give the same result.
+This can be executed from any folder, and will always give the same result.
 
 </div>
 
