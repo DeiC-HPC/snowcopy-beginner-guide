@@ -1,7 +1,14 @@
-Now, lets get started with the command line. It's a way of giving commands 
+# Using the command line
+
+Now, lets get started with the command line. It's a way of giving commands to the computer through text.
+
+<div class="explanation-note">
+    <Strong>INFO:</Strong> command line and terminal are used interchangeable to indicate a text based system for navigating your operating system.
+</div>
+
+Navigate to a folder where you have some files you are interested in transferring. Right click and click "Open in terminal":
 
 <div data-platform="windows">
-Navigate to a folder where you have some files you are interested in transferring. Right click and click "Open in terminial":
 
 ![](../image/win-open-terminal.png)
 
