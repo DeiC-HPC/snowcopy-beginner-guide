@@ -1,6 +1,29 @@
 # List files
 
-Let's explore our new bucket to confirm that its contents is as we expect.
+Lets first list the buckets to see our newly uploaded one.
+
+<div data-platform="windows">
+
+<div class="command-box">
+    <div class="command-label">COMMAND</div> <span class="cmd-bin">.\snowcopy.exe ls lumi:</span>
+</div>
+
+![](../image/win-ls-buckets-after-new.png)
+
+</div>
+
+<div data-platform="linux">
+
+<div class="command-box">
+    <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy ls lumi:</span>
+</div>
+
+![](../image/placeholder.png)
+
+
+</div>
+
+To list its contents, we can do as such:
 
 <div data-platform="windows">
 
