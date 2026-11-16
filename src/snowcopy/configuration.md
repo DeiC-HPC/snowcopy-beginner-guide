@@ -33,7 +33,11 @@ To navigate, use the arrow keys or simply click with your mouse on the field you
 * <Strong>S3 url:</Strong> provided by the S3 service. 
 * <Strong>S3 region:</Strong> its unlikely there is any need to change this unless specified directly by the S3 service.
 
-Fill in the values and quit the config manager.
+Fill in the values and quit the config manager. If you are unsure where to get the credentials, search the documentation of the S3 service or contact their support.
+
+<div class="explanation-note">
+    <Strong>Tip: </Strong> tip its possible to paste with ctrl+v in the config editor.
+</div>
 
 <div class="explanation-note">
     <Strong>Note: </Strong> this configuration is tied to your user on your local machine.
