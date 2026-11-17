@@ -17,18 +17,27 @@ It should end up looking like this:
 ![](../image/win-powershell.png)
 
 <div class="explanation-note">
-    <Strong>Note: </Strong> check that your prompt start with PS. If it does not, then write "powershell" and press enter.
+    <Strong>Note:</Strong> check that your prompt start with PS. If it does not, then write "powershell" and press enter.
 </div>
 
 Now you are in the commandline - specifically PowerShell. Great!
+
+The guide will use "C:\data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage.
 </div>
 
 <div data-platform="linux">
 
-![](../image/win-open-terminal.png)
+![](../image/linux-open-terminal.png)
 
 It might not look exactly the same, as there are different styles depending on which flavor of linux is installed on your machine.
 
-</div>
+A terminal will open, and it will look similar to this:
 
-The guide will use "C:\data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage.
+![](../image/linux-shell.png)
+
+The guide will use "~/data", but it can be an arbitrary folder - its simply some data we are interested in moving to the object storage.
+
+<div class="explanation-note">
+    <Strong>Note: </Strong>on linux "~" means the home folder of the current user, when working in the terminal. Its shorthand of /home/jon in this case.
+</div>
+</div>
