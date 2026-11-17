@@ -15,8 +15,10 @@ Let's upload the data folder that we were working with earlier.
 <div data-platform="linux">
 
 <div class="command-box">
-    <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy cp /data lumi:data-bucket</span>
+    <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy cp ~/data lumi:data-bucket</span>
 </div>
+
+![](../image/linux-upload.png)
 
 </div>
 

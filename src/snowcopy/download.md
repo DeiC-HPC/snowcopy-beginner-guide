@@ -19,10 +19,14 @@ C:\data-download is created if it does not exist. If we now run the dir command 
 <div data-platform="linux">
 
 <div class="command-box">
-    <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy cp lumi:data-bucket /data-download</span>
+    <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy cp lumi:data-bucket ~/data-download</span>
 </div>
 
-![](../image/placeholder.png)
+![](../image/linux-download.png)
+
+~/data-download is created if it does not exist. If we now run the ls command on our newest downloaded folder, we can see that the contents matches what we uploaded:
+
+![](../image/linux-ls-download.png)
 
 </div>
 

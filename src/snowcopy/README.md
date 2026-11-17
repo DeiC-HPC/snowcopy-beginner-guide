@@ -25,7 +25,7 @@ Move snowcopy to any directory you prefer. From there open a terminal and run th
 
 <div data-platform="windows">
     <div class="command-box">
-        <div class="command-label">COMMAND</div> <span class="cmd-bin">.\snowcopy.exe help"</span>
+        <div class="command-label">COMMAND</div> <span class="cmd-bin">.\snowcopy.exe help</span>
     </div>
 
 ![](../image/win-snowcopy-help.png)
@@ -33,9 +33,9 @@ Move snowcopy to any directory you prefer. From there open a terminal and run th
 </div>
 <div data-platform="linux">
     <div class="command-box">
-        <div class="command-label">COMMAND</div> <span class="cmd-bin">snowcopy help"</span>
+        <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy --help</span>
     </div>
 
-![](../image/placeholder.png)
+![](../image/linux-snowcopy-help.png)
 
 </div>

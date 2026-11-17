@@ -18,7 +18,7 @@ Lets first list the buckets to see our newly uploaded one.
     <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy ls lumi:</span>
 </div>
 
-![](../image/placeholder.png)
+![](../image/linux-ls-buckets-after-new.png)
 
 </div>
 
@@ -40,7 +40,7 @@ To list its contents, we can do as such:
     <div class="command-label">COMMAND</div> <span class="cmd-bin">./snowcopy ls lumi:data-bucket</span>
 </div>
 
-![](../image/placeholder.png)
+![](../image/linux-ls-bucket-content.png)
 
 
 </div>
@@ -51,4 +51,10 @@ Recall that each file is mapped to an object:
 
 {{#include ../../snippets/path-mapping.html}}
 
-We have two files in C:\data\ and they are listed in the bucket. Since we transferred the contents of data, there is no mention of the data folder.
+<div data-platform="windows">
+We have two files in C:\data\ and they are listed in the bucket.
+</div>
+<div data-platform="linux">
+We have two files in ~/data/ and they are listed in the bucket.
+</div>
+Since we transferred the contents of data, there is no mention of the data folder.
