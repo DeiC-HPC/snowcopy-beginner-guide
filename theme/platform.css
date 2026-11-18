@@ -1,14 +1,22 @@
 #platform-selector {
-    height: 34px;
+    height: 38px;
     padding: 0 10px;
 
-    background-color: var(--bg);
+    background-color: var(--theme-hover);
+    background-color: color-mix(in srgb, var(--bg) 80%, var(--fg));
     color: var(--fg);
 
-    border: 1px solid var(--theme-hover);
+    border: 1px solid var(--fg);
     border-radius: 4px;
 
     font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#platform-selector:focus-visible {
+    outline: 2px solid var(--links);
+    outline-offset: 2px;
 }
 
 [hidden] {

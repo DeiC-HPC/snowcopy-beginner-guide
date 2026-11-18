@@ -29,6 +29,7 @@
 
         const select = document.createElement("select");
         select.id = "platform-selector";
+        select.setAttribute("aria-label", "Platform");
 
         select.innerHTML = `
             <option value="linux">Linux/macOS</option>
