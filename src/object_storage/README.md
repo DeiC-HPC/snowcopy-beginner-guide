@@ -9,7 +9,7 @@ Here is an example transfer of a folder with a nested folder:
 <div class="command-box">
 <div class="command-label">COMMAND</div>
 <code class="command-text" data-platform="windows"><span class="cmd-bin">snowcopy.exe</span> <span class="cmd-sub">cp</span> <span class="cmd-src">C:\data</span> <span class="cmd-dst">s3://my-bucket</span></code>
-<code class="command-text" data-platform="linux"><span class="cmd-bin">snowcopy</span> <span class="cmd-sub">cp</span> <span class="cmd-src">/data</span> <span class="cmd-dst">s3://my-bucket</span></code>
+<code class="command-text" data-platform="linux"><span class="cmd-bin">snowcopy</span> <span class="cmd-sub">cp</span> <span class="cmd-src">~/data</span> <span class="cmd-dst">s3://my-bucket</span></code>
 </div>
 
 {{#include ../../snippets/path-mapping.html}}
